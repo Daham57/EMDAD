@@ -23,7 +23,6 @@ export function HeroSection() {
 
       {/* Hero Content */}
       <div className="relative z-10 text-center max-w-3xl mx-auto px-4 md:px-6 py-10">
-        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 bg-gradient-to-r from-emdad-gold via-yellow-400 to-emdad-gold bg-clip-text text-transparent animate-pulse arabic-text">
         <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold mb-4 md:mb-6 bg-gradient-to-r from-emdad-gold via-yellow-400 to-emdad-gold bg-clip-text text-transparent animate-pulse arabic-text leading-tight">
           {t('hero.title')}
         </h1>
@@ -53,7 +52,4 @@ export function HeroSection() {
       </div>
     </section>
   );
-}
-
-  )
 }
