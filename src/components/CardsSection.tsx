@@ -67,16 +67,16 @@ export function CardsSection() {
                 </CardHeader>
                 
                 <CardContent className="p-4 md:p-6">
-                  <CardTitle className="text-emdad-gold text-xl font-bold mb-3 arabic-text">
+                  <CardTitle className="text-emdad-gold heading-card font-bold mb-3 arabic-text">
                     {t(`cards.${card.key}.title`)}
                   </CardTitle>
                   
-                  <CardDescription className="text-white text-base leading-relaxed mb-6 arabic-text">
+                  <CardDescription className="text-white body-base leading-relaxed mb-6 arabic-text">
                     {t(`cards.${card.key}.description`)}
                   </CardDescription>
                   
                   <Button 
-                    className="bg-emdad-gold hover:bg-yellow-500 text-white w-full transition-all duration-200 text-sm md:text-base"
+                    className="bg-emdad-gold hover:bg-yellow-500 text-white w-full transition-all duration-200 body-small"
                     onClick={() => window.location.href = card.href}
                   >
                     {getButtonText(card.key)}

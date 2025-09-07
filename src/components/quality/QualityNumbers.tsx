@@ -138,11 +138,11 @@ export function QualityNumbers() {
           <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-emdad-gold to-yellow-600 rounded-full mb-6 shadow-2xl">
             <Award className="w-8 h-8 text-white" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+          <h2 className="heading-section font-bold text-white mb-6 tracking-tight">
             {t('quality.numbers.title')}
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-emdad-gold to-yellow-500 mx-auto mb-6" />
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto leading-relaxed arabic-text">
+          <p className="text-gray-300 body-base max-w-2xl mx-auto leading-relaxed arabic-text">
             أرقام موثقة تعكس التزامنا بالتميز والجودة في قطاع النقل والخدمات اللوجستية - البيانات للعام 2024
           </p>
         </div>
@@ -169,18 +169,18 @@ export function QualityNumbers() {
 
                 {/* Number */}
                 <div className="mb-4">
-                  <span className="text-4xl md:text-5xl font-bold text-white block leading-none">
+                  <span className="heading-section font-bold text-white block leading-none">
                     {isVisible ? displayValue : '0'}
                   </span>
                   {stat.suffix && (
-                    <span className="text-2xl font-semibold text-emdad-gold ml-1">
+                    <span className="heading-subsection font-semibold text-emdad-gold ml-1">
                       {stat.suffix}
                     </span>
                   )}
                 </div>
 
                 {/* Label */}
-                <p className="text-gray-300 text-base font-medium leading-relaxed group-hover:text-white transition-colors duration-300 arabic-text">
+                <p className="text-gray-300 body-base font-medium leading-relaxed group-hover:text-white transition-colors duration-300 arabic-text">
                   {stat.label}
                 </p>
 
@@ -193,7 +193,7 @@ export function QualityNumbers() {
 
         {/* Bottom Accent */}
         <div className="mt-16 text-center">
-          <div className="inline-flex items-center space-x-2 text-gray-400 text-sm">
+          <div className="inline-flex items-center space-x-2 text-gray-400 body-small">
             <div className="w-2 h-2 bg-emdad-gold rounded-full animate-pulse" />
             <span className="arabic-text">بيانات محدثة للعام 2024</span>
             <div className="w-2 h-2 bg-emdad-gold rounded-full animate-pulse" />

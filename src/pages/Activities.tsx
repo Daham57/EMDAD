@@ -61,10 +61,10 @@ At Emdad Mubasher, we understand that transporting petroleum products is a criti
         <div className="absolute inset-0 bg-emdad-navy opacity-80"></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
           <Activity className="w-16 h-16 text-emdad-gold mx-auto mb-6" />
-          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-emdad-gold mb-4 animate-fade-in-up leading-tight">
+          <h1 className="heading-page font-bold text-emdad-gold mb-4 animate-fade-in-up leading-tight">
             {language === 'ar' ? 'الأنشطة' : 'Activities'}
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-white animate-fade-in-up leading-relaxed" style={{ animationDelay: '0.2s' }}>
+          <p className="body-large text-white animate-fade-in-up leading-relaxed" style={{ animationDelay: '0.2s' }}>
             {language === 'ar' ? 'التخصص هو مفتاح النجاح' : 'Specialization is the Key to Success'}
           </p>
         </div>
@@ -81,8 +81,8 @@ At Emdad Mubasher, we understand that transporting petroleum products is a criti
                     <div className="w-16 h-16 bg-emdad-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
                       <achievement.icon className="w-8 h-8 text-emdad-gold" />
                     </div>
-                    <div className="text-3xl font-bold text-emdad-navy mb-2">{achievement.number}</div>
-                    <p className="text-gray-600 text-sm">
+                    <div className="heading-subsection font-bold text-emdad-navy mb-2">{achievement.number}</div>
+                    <p className="text-gray-600 body-small">
                       {language === 'ar' ? achievement.titleAr : achievement.titleEn}
                     </p>
                   </CardContent>
@@ -98,7 +98,7 @@ At Emdad Mubasher, we understand that transporting petroleum products is a criti
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none">
-              <div className="text-gray-700 leading-relaxed space-y-6 text-justify">
+              <div className="text-gray-700 leading-relaxed space-y-6 text-justify body-base">
                 {language === 'ar'
                   ? arabicContent.split('\n\n').map((p, i) => (
                       <p key={i} className="animate-fade-in-up" style={{ animationDelay: `${i * 0.1}s` }}>{p}</p>
@@ -118,7 +118,7 @@ At Emdad Mubasher, we understand that transporting petroleum products is a criti
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-emdad-gold mb-6">
+              <h2 className="heading-section font-bold text-emdad-gold mb-6">
                 {language === 'ar' ? 'من أبرز إنجازاتنا' : 'Key Achievements'}
               </h2>
               <div className="w-24 h-1 bg-emdad-gold mx-auto"></div>
@@ -129,7 +129,7 @@ At Emdad Mubasher, we understand that transporting petroleum products is a criti
                   <div className="flex-shrink-0 w-8 h-8 bg-emdad-gold rounded-full flex items-center justify-center mt-1">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
-                  <p className="text-white text-lg leading-relaxed">
+                  <p className="text-white body-base leading-relaxed">
                     {language === 'ar' ? achievement.titleAr : achievement.titleEn}
                   </p>
                 </div>
@@ -144,7 +144,7 @@ At Emdad Mubasher, we understand that transporting petroleum products is a criti
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-emdad-navy mb-6">
+              <h2 className="heading-section font-bold text-emdad-navy mb-6">
                 {language === 'ar' ? 'التغطية الإقليمية' : 'Regional Coverage'}
               </h2>
             </div>
@@ -157,14 +157,14 @@ At Emdad Mubasher, we understand that transporting petroleum products is a criti
                 />
               </div>
               <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-                <h3 className="text-2xl font-bold text-emdad-navy mb-6">
+                <h3 className="heading-subsection font-bold text-emdad-navy mb-6">
                   {language === 'ar' ? 'نخدم المنطقة بأكملها' : 'Serving the Entire Region'}
                 </h3>
                 <div className="space-y-4">
                   {['Syria', 'Lebanon', 'Jordan', 'Iraq', 'Turkey'].map((country, i) => (
                     <div key={i} className="flex items-center space-x-3 rtl:space-x-reverse">
                       <MapPin className="w-5 h-5 text-emdad-gold" />
-                      <span className="text-gray-700 font-medium">
+                      <span className="text-gray-700 font-medium body-base">
                         {language === 'ar' 
                           ? (country === 'Syria' ? 'سوريا' :
                              country === 'Lebanon' ? 'لبنان' :

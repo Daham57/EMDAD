@@ -36,7 +36,7 @@ export function WhyJotecSection() {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 
-            className={`text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-emdad-gold mb-12 md:mb-16 text-center animate-fade-in-up leading-tight ${
+            className={`heading-section font-bold text-emdad-gold mb-12 md:mb-16 text-center animate-fade-in-up leading-tight ${
               language === 'ar' ? 'font-[\'Cairo\',\'Tajawal\',\'GE_SS_Unique\',\'DIN_Next_Arabic\',sans-serif]' : ''
             }`}
           >
@@ -54,14 +54,14 @@ export function WhyJotecSection() {
                   <div className="w-2 h-2 md:w-3 md:h-3 bg-emdad-gold rounded-full mt-2 flex-shrink-0"></div>
                   <div className="flex-1">
                     <h3 
-                      className={`text-xl font-semibold text-white mb-3 ${
+                      className={`heading-card font-semibold text-white mb-3 ${
                         language === 'ar' ? 'font-[\'Cairo\',\'Tajawal\',\'GE_SS_Unique\',\'DIN_Next_Arabic\',sans-serif] text-right' : 'text-left'
                       }`}
                     >
                       {feature.title}
                     </h3>
                     <p 
-                      className={`text-gray-300 leading-relaxed ${
+                      className={`body-base text-gray-300 leading-relaxed ${
                         language === 'ar' ? 'font-[\'Cairo\',\'Tajawal\',\'GE_SS_Unique\',\'DIN_Next_Arabic\',sans-serif] text-right' : 'text-left'
                       }`}
                     >

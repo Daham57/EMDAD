@@ -57,10 +57,10 @@ export default function FAQ() {
       <section className="relative h-96 flex items-center justify-center bg-emdad-navy">
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
           <HelpCircle className="w-16 h-16 text-emdad-gold mx-auto mb-6" />
-          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-emdad-gold mb-4 md:mb-6 animate-fade-in-up leading-tight">
+          <h1 className="heading-page font-bold text-emdad-gold mb-4 md:mb-6 animate-fade-in-up leading-tight">
             {t('faq.hero.title')}
           </h1>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white animate-fade-in-up arabic-text leading-relaxed" style={{ animationDelay: '0.2s' }}>
+          <p className="body-large text-white animate-fade-in-up arabic-text leading-relaxed" style={{ animationDelay: '0.2s' }}>
             {t('faq.hero.subtitle')}
           </p>
         </div>
@@ -78,7 +78,7 @@ export default function FAQ() {
                       onClick={() => toggleItem(index)}
                       className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
                     >
-                      <h3 className="text-lg font-semibold text-emdad-navy pr-4 arabic-text">
+                      <h3 className="heading-card font-semibold text-emdad-navy pr-4 arabic-text">
                         {item.question}
                       </h3>
                       {openItems.includes(index) ? (
@@ -91,7 +91,7 @@ export default function FAQ() {
                     {openItems.includes(index) && (
                       <div className="px-6 pb-4">
                         <div className="border-t border-gray-200 pt-4">
-                          <p className="text-gray-700 leading-relaxed arabic-text">
+                          <p className="text-gray-700 leading-relaxed arabic-text body-base">
                             {item.answer}
                           </p>
                         </div>
@@ -106,15 +106,15 @@ export default function FAQ() {
             <div className="mt-16 text-center">
               <Card className="bg-emdad-navy text-white p-8">
                 <CardContent className="pt-0">
-                  <h3 className="text-2xl font-bold text-emdad-gold mb-4 arabic-text">
+                  <h3 className="heading-subsection font-bold text-emdad-gold mb-4 arabic-text">
                     {t('faq.stillQuestions')}
                   </h3>
-                  <p className="text-lg mb-6 arabic-text">
+                  <p className="body-base mb-6 arabic-text">
                     {t('faq.contactUs')}
                   </p>
                   <button
                     onClick={() => window.location.href = '/contact'}
-                    className="bg-emdad-gold hover:bg-yellow-500 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200"
+                    className="bg-emdad-gold hover:bg-yellow-500 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 body-base"
                   >
                     {t('faq.contactButton')}
                   </button>

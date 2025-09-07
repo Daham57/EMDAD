@@ -82,15 +82,15 @@ export function InteractiveSlider() {
             >
               <div className="absolute inset-0 bg-[#1F3B73] bg-opacity-70 flex items-center justify-center">
                 <div className="text-center max-w-3xl px-6">
-                  <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-emdad-gold mb-4 md:mb-6 arabic-text leading-tight">
+                  <h2 className="heading-section font-bold text-emdad-gold mb-4 md:mb-6 arabic-text leading-tight">
                     {t(`slider.${sliderData[activeIndex].key}`)}
                   </h2>
-                  <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white leading-relaxed mb-6 md:mb-8 arabic-text">
+                  <p className="body-large text-white leading-relaxed mb-6 md:mb-8 arabic-text">
                     {t(`slider.${sliderData[activeIndex].key}.description`)}
                   </p>
                   <Button
                     onClick={handleLearnMoreClick}
-                    className="bg-emdad-gold hover:bg-yellow-500 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none"
+                    className="bg-emdad-gold hover:bg-yellow-500 text-white px-8 py-3 body-base font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none"
                   >
                     {language === "ar" ? "اعرف أكثر" : "Learn More"}
                   </Button>
@@ -132,7 +132,7 @@ export function InteractiveSlider() {
                   }`}
                 ></div>
                 <span
-                  className={`text-sm font-medium whitespace-nowrap ${
+                  className={`body-small font-medium whitespace-nowrap ${
                     index === activeIndex ? "text-emdad-gold" : "text-gray-600"
                   } arabic-text`}
                 >

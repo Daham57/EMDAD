@@ -93,11 +93,11 @@ export default function About() {
         <div className="absolute inset-0 bg-emdad-navy opacity-80"></div>
         
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
-          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-emdad-gold mb-4 md:mb-6 animate-fade-in-up leading-tight">
+          <h1 className="heading-page font-bold text-emdad-gold mb-4 md:mb-6 animate-fade-in-up leading-tight">
             {t('aboutPage.hero.title')}
           </h1>
           
-          <p className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl text-white leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          <p className="body-large text-white leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             {t('aboutPage.hero.subtitle')}
           </p>
         </div>
@@ -109,10 +109,10 @@ export default function About() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-emdad-gold mb-6 md:mb-8 animate-fade-in-up arabic-text leading-tight">
+                <h2 className="heading-section font-bold text-emdad-gold mb-6 md:mb-8 animate-fade-in-up arabic-text leading-tight">
                   {t('aboutPage.company.title')}
                 </h2>
-                <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed animate-fade-in-up arabic-text" style={{ animationDelay: '0.2s' }}>
+                <p className="body-large text-gray-700 leading-relaxed animate-fade-in-up arabic-text" style={{ animationDelay: '0.2s' }}>
                   {t('aboutPage.company.description')}
                 </p>
               </div>
@@ -137,10 +137,10 @@ export default function About() {
                 <Card key={index} className="p-8 text-center hover:shadow-lg transition-shadow duration-300 animate-fade-in-up" style={{ animationDelay: `${index * 0.2}s` }}>
                   <CardContent className="pt-6">
                     <item.icon className="w-16 h-16 text-emdad-gold mx-auto mb-6" />
-                    <h3 className="text-2xl font-bold text-emdad-gold mb-4 arabic-text">
+                    <h3 className="heading-subsection font-bold text-emdad-gold mb-4 arabic-text">
                       {item.title}
                     </h3>
-                    <p className="text-gray-700 leading-relaxed arabic-text">
+                    <p className="body-base text-gray-700 leading-relaxed arabic-text">
                       {item.description}
                     </p>
                   </CardContent>
@@ -156,6 +156,7 @@ export default function About() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-emdad-gold text-center mb-12 md:mb-16 animate-fade-in-up leading-tight">
+            <h2 className="heading-section font-bold text-emdad-gold text-center mb-12 md:mb-16 animate-fade-in-up leading-tight">
               {t('aboutPage.partnerships.title')}
             </h2>
             
@@ -167,9 +168,9 @@ export default function About() {
                 <div key={index} className={`flex items-center mb-8 ${index % 2 === 0 ? 'justify-start' : 'justify-end'} animate-fade-in-up`} style={{ animationDelay: `${index * 0.2}s` }}>
                   <div className={`w-5/12 ${index % 2 === 0 ? 'timeline-item-left' : 'timeline-item-right'}`}>
                     <div className="bg-white p-6 rounded-lg shadow-lg">
-                      <div className="text-emdad-gold font-bold text-lg mb-2 arabic-balanced-text">{event.year}</div>
-                      <h3 className="text-emdad-navy font-semibold mb-2 arabic-text">{event.title}</h3>
-                      <p className="text-gray-600 arabic-text leading-relaxed">{event.description}</p>
+                      <div className="text-emdad-gold font-bold heading-card mb-2 arabic-balanced-text">{event.year}</div>
+                      <h3 className="text-emdad-navy font-semibold body-base mb-2 arabic-text">{event.title}</h3>
+                      <p className="text-gray-600 arabic-text leading-relaxed body-small">{event.description}</p>
                     </div>
                   </div>
                   <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-emdad-gold rounded-full"></div>
@@ -186,9 +187,9 @@ export default function About() {
                     <div className="absolute left-2 w-4 h-4 bg-emdad-gold rounded-full transform -translate-x-1/2 mt-6"></div>
                     <div className="ml-12 w-full">
                       <div className="bg-white p-6 rounded-lg shadow-lg">
-                        <div className="text-emdad-gold font-bold text-lg mb-2 arabic-balanced-text">{event.year}</div>
-                        <h3 className="text-emdad-navy font-semibold mb-2 arabic-text">{event.title}</h3>
-                        <p className="text-gray-600 arabic-text leading-relaxed">{event.description}</p>
+                        <div className="text-emdad-gold font-bold heading-card mb-2 arabic-balanced-text">{event.year}</div>
+                        <h3 className="text-emdad-navy font-semibold body-base mb-2 arabic-text">{event.title}</h3>
+                        <p className="text-gray-600 arabic-text leading-relaxed body-small">{event.description}</p>
                       </div>
                     </div>
                   </div>
@@ -202,7 +203,7 @@ export default function About() {
                 <Card key={index} className="bg-white p-6 text-center hover:shadow-lg transition-shadow duration-300 animate-fade-in-up" style={{ animationDelay: `${(index + 3) * 0.2}s` }}>
                   <CardContent className="pt-4">
                     <CheckCircle className="w-12 h-12 text-emdad-gold mx-auto mb-4" />
-                    <p className="text-gray-700 font-medium arabic-text leading-relaxed">{partnership}</p>
+                    <p className="text-gray-700 font-medium arabic-text leading-relaxed body-base">{partnership}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -215,7 +216,7 @@ export default function About() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-emdad-gold text-center mb-12 md:mb-16 animate-fade-in-up leading-tight">
+            <h2 className="heading-section font-bold text-emdad-gold text-center mb-12 md:mb-16 animate-fade-in-up leading-tight">
               {t('aboutPage.ambition.title')}
             </h2>
             
@@ -224,10 +225,10 @@ export default function About() {
                 <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow duration-300 animate-fade-in-up" style={{ animationDelay: `${index * 0.2}s` }}>
                   <CardContent className="pt-6">
                     <item.icon className="w-12 h-12 text-emdad-gold mx-auto mb-4" />
-                    <h3 className="text-xl font-bold text-emdad-navy mb-3 arabic-text">
+                    <h3 className="heading-card font-bold text-emdad-navy mb-3 arabic-text">
                       {item.title}
                     </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed arabic-text">
+                    <p className="text-gray-600 body-small leading-relaxed arabic-text">
                       {item.description}
                     </p>
                   </CardContent>

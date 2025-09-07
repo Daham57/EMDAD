@@ -23,21 +23,21 @@ export function HeroSection() {
 
       {/* Hero Content */}
       <div className="relative z-10 text-center max-w-3xl mx-auto px-4 md:px-6 py-10">
-        <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold mb-4 md:mb-6 bg-gradient-to-r from-emdad-gold via-yellow-400 to-emdad-gold bg-clip-text text-transparent animate-pulse arabic-text leading-tight">
+        <h1 className="heading-hero font-extrabold mb-4 md:mb-6 bg-gradient-to-r from-emdad-gold via-yellow-400 to-emdad-gold bg-clip-text text-transparent animate-pulse arabic-text leading-tight">
           {t('hero.title')}
         </h1>
 
-        <p className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl text-white/80 mb-2 md:mb-3 animate-fade-in-up arabic-text arabic-balanced-text leading-relaxed">
+        <p className="body-base text-white/80 mb-2 md:mb-3 animate-fade-in-up arabic-text arabic-balanced-text leading-relaxed">
           {t('hero.company')}
         </p>
 
-        <p className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl text-white leading-relaxed mb-6 md:mb-8 animate-fade-in-up arabic-text">
+        <p className="body-large text-white leading-relaxed mb-6 md:mb-8 animate-fade-in-up arabic-text">
           {t('hero.subtitle')}
         </p>
 
         <Button
           onClick={scrollToAbout}
-          className="relative bg-emdad-gold hover:bg-yellow-500 text-white px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 text-sm md:text-base lg:text-lg font-semibold rounded-xl shadow-lg transition duration-300 hover:scale-105
+          className="relative bg-emdad-gold hover:bg-yellow-500 text-white px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 body-base font-semibold rounded-xl shadow-lg transition duration-300 hover:scale-105
           before:absolute before:inset-0 before:rounded-xl before:border-2 before:border-yellow-400/50 before:opacity-0 hover:before:opacity-100 before:animate-ping"
         >
           {t('hero.cta')}

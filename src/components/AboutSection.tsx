@@ -16,16 +16,16 @@ export function AboutSection() {
     <section id="about" className="py-20 bg-emdad-navy">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-emdad-gold mb-6 md:mb-8 animate-fade-in-up arabic-text leading-tight">
+          <h2 className="heading-section font-bold text-emdad-gold mb-6 md:mb-8 animate-fade-in-up arabic-text leading-tight">
             {t('about.title')}
           </h2>
           
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white leading-relaxed mb-6 md:mb-8 animate-fade-in-up arabic-text" style={{ animationDelay: '0.2s' }}>
+          <p className="body-large text-white leading-relaxed mb-6 md:mb-8 animate-fade-in-up arabic-text" style={{ animationDelay: '0.2s' }}>
             {t('about.description')}
           </p>
           
           <Button 
-            className="bg-emdad-gold hover:bg-yellow-500 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 animate-fade-in-up"
+            className="bg-emdad-gold hover:bg-yellow-500 text-white px-8 py-4 body-base font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 animate-fade-in-up"
             style={{ animationDelay: '0.4s' }}
             onClick={handleAboutClick}
           >

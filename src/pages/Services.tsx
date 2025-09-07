@@ -71,10 +71,10 @@ export default function Services() {
   {/* Hero Content */}
   <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
     <Truck className="w-16 h-16 text-emdad-gold mx-auto mb-6" />
-    <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-emdad-gold mb-4 md:mb-6 animate-fade-in-up leading-tight">
+    <h1 className="heading-page font-bold text-emdad-gold mb-4 md:mb-6 animate-fade-in-up leading-tight">
       {language === 'ar' ? 'خدماتنا' : 'Our Services'}
     </h1>
-    <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white animate-fade-in-up leading-relaxed" style={{ animationDelay: '0.2s' }}>
+    <p className="body-large text-white animate-fade-in-up leading-relaxed" style={{ animationDelay: '0.2s' }}>
       {language === 'ar' 
         ? 'حلول نقل متخصصة وآمنة للمنتجات النفطية' 
         : 'Specialized and secure transport solutions for petroleum products'}
@@ -95,10 +95,10 @@ export default function Services() {
                     <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br ${service.color} rounded-xl mb-6 shadow-lg`}>
                       <service.icon className="w-8 h-8 text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold text-emdad-navy mb-4">
+                    <h3 className="heading-subsection font-bold text-emdad-navy mb-4">
                       {language === 'ar' ? service.titleAr : service.titleEn}
                     </h3>
-                    <p className="text-gray-700 leading-relaxed">
+                    <p className="text-gray-700 leading-relaxed body-base">
                       {language === 'ar' ? service.descriptionAr : service.descriptionEn}
                     </p>
                   </CardContent>
@@ -114,7 +114,7 @@ export default function Services() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-emdad-navy mb-6">
+              <h2 className="heading-section font-bold text-emdad-navy mb-6">
                 {language === 'ar' ? 'القدرات التشغيلية' : 'Operational Capabilities'}
               </h2>
               <div className="w-24 h-1 bg-emdad-gold mx-auto"></div>
@@ -126,7 +126,7 @@ export default function Services() {
                   <div className="w-20 h-20 bg-emdad-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
                     <capability.icon className="w-10 h-10 text-emdad-gold" />
                   </div>
-                  <p className="text-lg font-semibold text-emdad-navy">
+                  <p className="body-base font-semibold text-emdad-navy">
                     {language === 'ar' ? capability.titleAr : capability.titleEn}
                   </p>
                 </div>
@@ -140,17 +140,17 @@ export default function Services() {
       <section className="py-20 bg-emdad-navy">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-emdad-gold mb-6">
+            <h2 className="heading-section font-bold text-emdad-gold mb-6">
               {language === 'ar' ? 'هل تحتاج خدماتنا؟' : 'Need Our Services?'}
             </h2>
-            <p className="text-xl text-white mb-8">
+            <p className="body-large text-white mb-8">
               {language === 'ar' 
                 ? 'تواصل معنا للحصول على عرض سعر مخصص لاحتياجاتك'
                 : 'Contact us for a customized quote tailored to your needs'
               }
             </p>
             <Button 
-              className="bg-emdad-gold hover:bg-yellow-500 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
+              className="bg-emdad-gold hover:bg-yellow-500 text-white px-8 py-4 body-base font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
               onClick={() => window.location.href = '/contact'}
             >
               {language === 'ar' ? 'احصل على عرض سعر' : 'Get a Quote'}

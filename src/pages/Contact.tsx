@@ -32,11 +32,11 @@ export default function Contact() {
         {/* Hero Content */}
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
           <Mail className="w-16 h-16 text-emdad-gold mx-auto mb-6" />
-          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-emdad-gold mb-4 md:mb-6 animate-fade-in-up leading-tight">
+          <h1 className="heading-page font-bold text-emdad-gold mb-4 md:mb-6 animate-fade-in-up leading-tight">
             {t("contact.hero.title")}
           </h1>
           <p
-            className="text-base sm:text-lg md:text-xl text-white animate-fade-in-up arabic-text leading-relaxed"
+            className="body-large text-white animate-fade-in-up arabic-text leading-relaxed"
             style={{ animationDelay: "0.2s" }}
           >
             {t("contact.hero.subtitle")}
@@ -51,7 +51,7 @@ export default function Contact() {
             {/* Contact Information */}
             <Card className="shadow-lg">
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-emdad-navy mb-6 text-center arabic-text">
+                <h3 className="heading-card font-bold text-emdad-navy mb-6 text-center arabic-text">
                   {t("contact.info.title")}
                 </h3>
 
@@ -61,7 +61,7 @@ export default function Contact() {
                     <div className="flex flex-col items-center space-y-2">
                       <Smartphone className="w-6 h-6 text-emdad-gold" />
                       <span
-                        className="text-gray-700 font-medium text-center"
+                        className="text-gray-700 font-medium text-center body-base"
                         dir="ltr"
                       >
                         {t("contact.info.mobile")}
@@ -70,10 +70,10 @@ export default function Contact() {
                     <div className="flex flex-col items-center space-y-2">
                       <Printer className="w-6 h-6 text-emdad-gold" />
                       <div className="text-center">
-                        <p className="text-gray-700" dir="ltr">
+                        <p className="text-gray-700 body-small" dir="ltr">
                           {t("contact.info.fax1")}
                         </p>
-                        <p className="text-gray-700" dir="ltr">
+                        <p className="text-gray-700 body-small" dir="ltr">
                           {t("contact.info.fax2")}
                         </p>
                       </div>
@@ -85,7 +85,7 @@ export default function Contact() {
                     <div className="flex flex-col items-center space-y-2">
                       <PhoneCall className="w-6 h-6 text-emdad-gold" />
                       <span
-                        className="text-gray-700 font-medium text-center"
+                        className="text-gray-700 font-medium text-center body-base"
                         dir="ltr"
                       >
                         {t("contact.info.landline")}
@@ -93,7 +93,7 @@ export default function Contact() {
                     </div>
                     <div className="flex flex-col items-center space-y-2">
                       <Mail className="w-6 h-6 text-emdad-gold" />
-                      <span className="text-gray-700 text-center">
+                      <span className="text-gray-700 text-center body-base">
                         {t("contact.info.email")}
                       </span>
                     </div>
@@ -105,11 +105,11 @@ export default function Contact() {
             {/* Business Hours */}
             <Card className="shadow-lg">
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-emdad-navy mb-6 arabic-text">
+                <h3 className="heading-card font-bold text-emdad-navy mb-6 arabic-text">
                   <Clock className="w-6 h-6 text-emdad-gold inline mr-2" />
                   {t("contact.hours.title")}
                 </h3>
-                <div className="space-y-2 text-gray-700 arabic-text">
+                <div className="space-y-2 text-gray-700 arabic-text body-base">
                   <p>{t("contact.hours.weekdays")}</p>
                 </div>
               </CardContent>
@@ -124,7 +124,7 @@ export default function Contact() {
           <div className="max-w-4xl mx-auto">
             <Card className="shadow-lg">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-emdad-navy mb-6 text-center arabic-text">
+                <h2 className="heading-subsection font-bold text-emdad-navy mb-6 text-center arabic-text">
                   <MapPin className="w-6 h-6 text-emdad-gold inline mr-2" />
                   {t("contact.location.title")}
                 </h2>
@@ -146,7 +146,7 @@ export default function Contact() {
                       href="https://www.google.com/maps/place/Alabid+fuel+station+%D9%83%D8%A7%D8%B2%D9%8A%D8%A9+%D8%A7%D9%84%D8%B9%D8%A7%D8%A8%D8%AF%E2%80%AD/@33.3883283,36.26063,16.5z/data=!4m6!3m5!1s0x151921890b06c501:0x15b99d45ef042d28!8m2!3d33.3813401!4d36.2567677!16s%2Fg%2F11h81j0w14?hl=ar&entry=ttu"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-emdad-gold hover:text-yellow-500 text-lg font-medium underline inline-flex items-center"
+                      className="text-emdad-gold hover:text-yellow-500 body-base font-medium underline inline-flex items-center"
                     >
                       <MapPin className="w-4 h-4 mr-1" />
                       {t("contact.map.viewLarger")}

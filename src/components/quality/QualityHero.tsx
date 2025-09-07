@@ -22,10 +22,10 @@ export function QualityHero() {
 
       <div className="relative z-10 container mx-auto px-4 text-center max-w-4xl">
         <div className="animate-fade-in-up">
-          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-emdad-gold mb-4 md:mb-6 leading-tight arabic-text">
+          <h1 className="heading-page font-bold text-emdad-gold mb-4 md:mb-6 leading-tight arabic-text">
             {t('quality.hero.title')}
           </h1>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed arabic-text">
+          <p className="body-large text-white/90 max-w-3xl mx-auto leading-relaxed arabic-text">
             {t('quality.hero.subtitle')}
           </p>
         </div>
